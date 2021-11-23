@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bank">
+        <h1>Aplikacija banke</h1>
+        <h3>Unos klijenta</h3>
+        <input id="ime" type="text" placeholder="Ime:"> <input id="prezime" type="text" placeholder="Prezime:"> <button onclick="dodajKlijenta()">Dodaj osobu</button>
+        <h3>Uplata isplata sa racuna</h3>
+        <select id="korisnici"></select> <input id="iznos" type="text" placeholder="Iznos:"> <input id="uplata" value="U" type="radio" name="selekcija">Uplata   <input id="isplata" type="radio" value="I"  name="selekcija">Isplata   <button onclick="snimiTrans()">Snimi transkaciju</button>
+        <div class="stanje">
+            <h3>Osoba sa najvecim stanjem na racunu</h3>
+            <div class="najRacun">
+
+            </div>
+        </div>
+        <div class="istorija">
+            <h3>Dosadasnji klijenti sa stanjem racuna</h3>
+            <div class="istorijaKlijenata">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
